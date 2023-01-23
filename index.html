@@ -15,20 +15,28 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+            <div class="overview">
         <h1>New York</h1>
         <ul>
           <li>Friday 05:00</li>
           <li>Clear</li>
         </ul>
+        </div>
         <div class="row">
           <div class="col-6">
+            <div class="d-flex weather-temperature">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               alt="Clear"
+              id="icon"
             />
-            12°C | °F
+            <div>
+            <strong id="temperature">12</strong><span class="units">°C | <a href="#">°F</a></span>
           </div>
+         </div>
+        </div>
           <div class="col-6">
             <ul>
               <li>Precipitacion: 0%</li>
@@ -37,7 +45,8 @@
             </ul>
           </div>
         </div>
-        <small>
+      </div>
+       <small>
           <a
             href="https://github.com/Fabygranados/vanilla-weather-app"
             target="_blank"
@@ -45,7 +54,7 @@
           >
           By Faby Granados
         </small>
-      </div>
+        </div>
     </div>
     <script src="src/app.js"></script>
     <script
