@@ -27,8 +27,19 @@ function displayTemperature(response) {
     iconElement.setAttribute("alt", response.data.condition.description)
 }
 
+function search(city) {
 let apiKey="0406a2d65ft65fe83b49bc397b79bo2a";
-let city = "paris";
-let apiUrl=`https://api.shecodes.io/weather/v1/current?query=${city}&key=0406a2d65ft65fe83b49bc397b79bo2a&units=metric`;
+let apiUrl=`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event){
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+search("New York")
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
