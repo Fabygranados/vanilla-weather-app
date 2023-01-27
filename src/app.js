@@ -24,6 +24,7 @@ function displayTemperature(response) {
 }
 
 let apiKey="0406a2d65ft65fe83b49bc397b79bo2a";
-let apiUrl=`https://api.shecodes.io/weather/v1/current?query=New-York&key=0406a2d65ft65fe83b49bc397b79bo2a&units=metric`;
+let city = "montreal";
+let apiUrl=`https://api.shecodes.io/weather/v1/current?query=${city}&key=0406a2d65ft65fe83b49bc397b79bo2a&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
