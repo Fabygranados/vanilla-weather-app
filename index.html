@@ -10,7 +10,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
@@ -22,21 +22,22 @@
           <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
-            <input 
-            type="search" 
-            placeholder="Type a city..." 
-            class="form-control"
-            id="city-input"
-            autocomplete="off"
-            />
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
             </div>
-            <div class="col-3">
-            <input 
-            type="submit" 
-            value="Search" 
-            class="btn btn-primary w-100">
-            </div>
-          </div>
           </form>
           <div class="overview">
             <h1 id="city"></h1>
@@ -48,14 +49,13 @@
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
-                <img
-                  src=""
-                  alt=""
-                  id="icon"
-                />
+                <img src="" alt="" id="icon" />
                 <div>
                   <strong id="temperature"></strong
-                  ><span class="units">°C | <a href="#">°F</a></span>
+                  ><span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a> | 
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
                 </div>
               </div>
             </div>
