@@ -1,12 +1,12 @@
 body {
-    font-family: arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 }
 h1{ 
-    color: #878787;
-    font-size: 24px;
+    color: #767676;
+    font-size: 55px;
     font-weight: 100px;
-    line-height: 28.8px;
-    margin-bottom: 0;
+    line-height: 28.9px;
+    margin-bottom: 16px;
 }
 ul{
     margin: 0;
@@ -16,7 +16,7 @@ li {
     list-style: none;
     margin: 0;
     padding:0;
-    color: rgb(135, 135, 135);
+    color: rgb(98, 102, 106);
     font-size: 16px;
     font-weight: 100px;
     line-height: 19px;
@@ -24,6 +24,8 @@ li {
 li:first-letter {
  text-transform: capitalize;
 }
+
+
 .weather-app-wrapper {
     max-width: 600px;
     margin: 30px auto;
@@ -31,8 +33,12 @@ li:first-letter {
 .weather-app {
     padding: 20px;
     border: 1px solid #dadde1;
-    border-radius: 5px;
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 3px #837a8b);
+  background-image: url("https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+    background-size: cover;
 }
+
 .overview {
     margin-bottom: 20px;
 }
@@ -42,26 +48,32 @@ li:first-letter {
     width: 64px;
 }
 .weather-temperature strong {
-    color: rgb(33, 33, 33);
+    color: rgb(98, 102, 106);
     font-size: 64px;
     line-height: 1;
     font-weight: 400;
 }
 .weather-temperature .units {
     position: relative;
-    font-size: 16px;
-    top: -34px
+    font-size: 20px;
+    top: -34px;
+    color: rgb(98, 102, 106);
 }
 
 .weather-forecast {
     margin-top: 20px;
     text-align: center;
-    color:#000;
+    color: rgb(98, 102, 106);
+    background-color: #dadde15f;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .weather-forecast-date {
     font-size: 16px;
-    opacity: 0.5;
+    font-weight: bold;
+    opacity: 0.8;
+    color: rgb(82, 84, 85);
 }
 
 .weather-forecast-temperature {
@@ -69,5 +81,5 @@ li:first-letter {
 }
 
 .weather-forecast-temperature-min {
-    opacity: 0.5;
+    opacity: 0.55;
 }
